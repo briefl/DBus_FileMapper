@@ -1,0 +1,28 @@
+<!DOCTYPE node PUBLIC "-//freedesktop//DTD D-BUS Object Introspection 1.0//EN"
+                      "http://www.freedesktop.org/standards/dbus/1.0/introspect.dtd">
+<node>
+  <interface name="org.artem.Interface">
+    <method name="RegisterApplication">
+      <arg name="appName" type="s" direction="in"/>
+      <arg name="supportedFormats" type="as" direction="in"/>
+    </method>
+    <method name="OpenFileWithRegisteredApp">
+      <arg name="filePath" type="s" direction="in"/>
+    </method>
+    <method name="RegisterDefaultApplication">
+      <arg name="format" type="s" direction="in"/>
+      <arg name="defaultApp" type="s" direction="in"/>
+    </method>
+    <method name="GetDefaultApplication">
+      <arg name="extension" type="s" direction="in"/>
+      <arg name="defaultApp" type="s" direction="out"/>
+    </method>
+    <method name="GetRegisteredApplications">
+      <arg name="applications" type="as" direction="out"/>
+    </method>
+    <method name="GetRegisteredFormats">
+      <arg name="formats" type="a{ss}" direction="out"/>
+    </method>
+  </interface>
+</node>
+
