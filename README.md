@@ -32,35 +32,75 @@ $ git clone https://github.com/briefl/DBus_FileMapper
 
 Для корректной работы приложения сначала вам нужно запустить DBus сервис и его интерфейс, чтобы далее работать с его методами.
 
-Для этого через терминал запустим его исполняемый файл:
+Перейдите в папку, куда вы склонировали репризиторий:
+![изображение](https://github.com/briefl/DBus_FileMapper/assets/168663803/93114432-86b0-42b6-94b9-d99236d3b9fb)
+
+Далее в папку dbus_service:
+![изображение](https://github.com/briefl/DBus_FileMapper/assets/168663803/f8baef32-e983-464d-aaa7-a6150a3a6908)
+
+Далее в папку build:
+![изображение](https://github.com/briefl/DBus_FileMapper/assets/168663803/962b2e55-b84f-4817-8576-84e16c2c413b)
+
+Откройте папку Desktop_Qt_6_8_0-Debug:
+![изображение](https://github.com/briefl/DBus_FileMapper/assets/168663803/d9d19152-1ca4-4032-b478-01cea743ed09)
+
+Найдите в ней файл dbus_service:
+![изображение](https://github.com/briefl/DBus_FileMapper/assets/168663803/1d4e6139-3826-4861-919f-34417887230f)
+
+Нажмите на него правой кнопкой мыши, выберите "свойства" и включите пункт "Исполняемый как приложение":
+![изображение](https://github.com/briefl/DBus_FileMapper/assets/168663803/da9ad1da-f6f7-4c3c-8d40-b24bea85459c)
+
+
+Далее откройте терминал и введите следующее:
 ```
 $ /путь/к/папке/с/клонированым/репризиторием/DBus_FileMapper/dbus_service/build/Desktop_Qt_6_8_0-Debug/dbus_service
 ```
+Результат должен выглядить так:
+![изображение](https://github.com/briefl/DBus_FileMapper/assets/168663803/72d3f8b6-88c7-4b4e-b144-c1d14d4d1f97)
 
+Теперь, когда мы зарегесрировали наш сервис и интерфейс, мы готовы к использованию нашего приложения.
 
-Перейдите в папку, в которую вы клонировали git репризиторий и найдите там папку Build
-![изображение](https://github.com/briefl/FileMapper/assets/168663803/c8607f45-64cc-4942-a1be-e6b3d0490fd5)
-Перейдите в неё, и в следующую папку Desktop_Qt_6_8_0-Debug.
-![изображение](https://github.com/briefl/FileMapper/assets/168663803/3ed33dbc-18c9-4861-b0b0-b422c3dce689)
-Откройте файл FileMapper. Готово, приложение запущено.(Убедитесь что в свойствах файла, переключатель включен на "Исполняемый как приложение"
-![изображение](https://github.com/briefl/FileMapper/assets/168663803/7b39f90b-4d69-4c81-8145-f5b9a1d5a696)
+Для его запуска сначал нам нужно также сделать его исполняемым.
 
-![изображение](https://github.com/briefl/FileMapper/assets/168663803/1b18d7b6-6e7d-4b40-b646-d2c33b56f632)
+Перейдите в папку, куда вы склонировали репризиторий:
+![изображение](https://github.com/briefl/DBus_FileMapper/assets/168663803/93114432-86b0-42b6-94b9-d99236d3b9fb)
 
+Далее в папку Dbus_FileMapper:
+![изображение](https://github.com/briefl/DBus_FileMapper/assets/168663803/06a9f1a7-1c83-43df-950d-512e5b1d4cfd)
+
+Далее в папку build:
+![изображение](https://github.com/briefl/DBus_FileMapper/assets/168663803/b22d779a-528b-44b4-ac65-4f8a4b77761a)
+
+Откройте папку Desktop_Qt_6_8_0-Debug:
+![изображение](https://github.com/briefl/DBus_FileMapper/assets/168663803/d9d19152-1ca4-4032-b478-01cea743ed09)
+
+Найдите в ней файл Dbus_FileMapper:
+![изображение](https://github.com/briefl/DBus_FileMapper/assets/168663803/af74fa37-1679-4232-87e8-72feced3f8bb)
+
+Нажмите на него правой кнопкой мыши, выберите "свойства" и включите пункт "Исполняемый как приложение":
+![изображение](https://github.com/briefl/DBus_FileMapper/assets/168663803/5db3886e-1f15-47c8-b35e-62f391c64142)
+
+Готово, теперь мы можем корректно использовать наше приложение.(Просто откройте файл DBus_FileMapper, который вы только что сделали Исполняемым)
 
 # Примеры
 
 Рассмотрим пример работы в Linux Unbuntu, в котором пользователь хочет открыть файл формата txt, предварительно дав понять приложению с помощью чего его открывать
-![изображение](https://github.com/briefl/FileMapper/assets/168663803/cf4dcba8-088f-407d-8cbb-9cd54ecc097e)
+![изображение](https://github.com/briefl/DBus_FileMapper/assets/168663803/4fe40035-cf81-4099-b392-7ff1059ad3c7)
+
 Здесь мы вводим путь к исполняемому файлу приложения, в данном случае к Текстовому редактору и формат данных, который должен открываться через это приложение, то есть txt
 
-Нажмём кнопку Register Application и после Show Registered Formats
-![изображение](https://github.com/briefl/FileMapper/assets/168663803/e33420f8-50c8-4ada-8559-399a9dfb26d0)
+Нажмём кнопку Register Application и после Show Registered Formats и кнопку Show Registered Formats
+![изображение](https://github.com/briefl/DBus_FileMapper/assets/168663803/8d32bc6c-60af-4741-be15-0f3c15d368e0)
+![изображение](https://github.com/briefl/DBus_FileMapper/assets/168663803/1d4a4732-3f8f-46ba-b149-831a22426395)
+
 Теперь приложение Текстовый редактор зарегестрировано для открытия файлов .txt и мы можем открыть какой-либо файл указав к нему путь и нажать на кнопку Open File
-![изображение](https://github.com/briefl/FileMapper/assets/168663803/5586b4e2-a116-45fd-ad3c-5a8b62b7de50)
+![изображение](https://github.com/briefl/DBus_FileMapper/assets/168663803/3d89f3f2-2866-4e70-93a9-e61f703f51d6)
+
 
 В этом примеры мы зарегестрировали приложение Libre Office Writer для открытия txt файлов и вот что получилось
-![изображение](https://github.com/briefl/FileMapper/assets/168663803/75f8b49f-ef73-4597-95e2-6fea81892d12)
+![изображение](https://github.com/briefl/DBus_FileMapper/assets/168663803/c12b5f08-f484-47a6-8a61-a1d95d1b40a1)
+
 
 Также, если пользователь укажет путь к файлу, на формат которого не зарегестрировано ни одно приложение, то программа откроет его через приложение по умолчанию для этого формата и также зарегестрирует дефолтное приложение для него
-![изображение](https://github.com/briefl/FileMapper/assets/168663803/f00e0840-ee08-48b5-9e30-3c1b7c890dcc)
+![изображение](https://github.com/briefl/DBus_FileMapper/assets/168663803/bc39d9c1-f507-4237-82f2-4853d66805de)
+
